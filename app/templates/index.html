@@ -1,0 +1,21 @@
+<html>
+<head>
+<style>
+    td {font-family: Arial, Helvetica, sans-serif;}
+</style>
+
+</head>
+<body>
+<h1>Available URLs</h1>
+
+<table border=1>
+ <tr><th>URL</th> <th>Returns</th></tr>
+ <tr><td><pre>/forbidden/</pre></td><td>Return HTTP 403 (Forbidden)</td></tr>
+ <tr><td><pre>/payment-required/</pre></td><td>Return HTTP 402 (Payment Required)</td></tr>
+ <tr><td><pre>/unauthorized/</pre></td><td>Return HTTP 401 (Unauthorized)</td></tr>
+ <tr><td><pre>/unacceptable/</pre></td><td>Return HTTP 406 (Not Acceptable)</td></tr>
+ <tr><td><pre>/not-allowed/</pre></td><td>Return HTTP 405 (Method Not Allowed)</td></tr>
+ <tr><td><pre>/status/&lt;int&gt;/</pre></td><td>Return HTTP with status code <int>, for any int 100-599</td></tr>
+</table>
+</body>
+</html>
